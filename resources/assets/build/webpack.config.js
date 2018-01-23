@@ -93,6 +93,10 @@ let webpackConfig = {
           ],
         }),
       },
+	  {
+        test: /\.(jpe?g|png)$/i,
+        loader: 'responsive-loader'
+      },
       {
         test: /\.(ttf|eot|woff2?|png|jpe?g|gif|svg|ico)$/,
         include: config.paths.assets,
