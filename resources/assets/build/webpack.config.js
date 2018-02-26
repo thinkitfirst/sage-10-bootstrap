@@ -56,7 +56,7 @@ let webpackConfig = {
           fallback: 'style',
           use: [
             { loader: 'css', options: { sourceMap: config.enabled.sourceMaps } },
-            { loader: 'resolve-url', options: { sourceMap: config.enabled.sourceMaps } },
+            { loader: 'resolve-url', options: { sourceMap: config.enabled.sourceMaps, keepQuery: true } },
             { loader: 'sass', options: { sourceMap: config.enabled.sourceMaps } },
           ],
         }),
