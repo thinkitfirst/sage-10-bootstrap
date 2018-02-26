@@ -26,9 +26,9 @@ let webpackConfig = {
     version: false,
     timings: false,
     children: false,
-    errors: false,
-    errorDetails: false,
-    warnings: false,
+    errors: true,
+    errorDetails: true,
+    warnings: true,
     chunks: false,
     modules: false,
     reasons: false,
@@ -48,31 +48,6 @@ let webpackConfig = {
         test: /\.(js|s?[ca]ss)$/,
         include: config.paths.assets,
         loader: 'import-glob',
-      },
-      {
-        test: /\.js$/,
-        exclude: [/node_modules(?![/|\\](bootstrap|foundation-sites))/],
-        use: [
-          { loader: 'cache' },
-          { loader: 'buble', options: { objectAssign: 'Object.assign' } },
-        ],
-      },
-      {
-        test: /\.css$/,
-        include: config.paths.assets,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style',
-          use: [
-            { loader: 'cache' },
-            { loader: 'css', options: { sourceMap: config.enabled.sourceMaps } },
-            {
-              loader: 'postcss', options: {
-                config: { path: __dirname, ctx: config },
-                sourceMap: config.enabled.sourceMaps,
-              },
-            },
-          ],
-        }),
       },
       {
         test: /\.scss$/,
@@ -96,26 +71,7 @@ let webpackConfig = {
 	  {
         test: /\.(jpe?g|png)$/i,
         loader: 'responsive-loader'
-      },
-	  {
-        test: /\.(ttf|eot|woff2?|png|jpe?g|gif|svg|ico)$/,
-        include: config.paths.assets,
-        loader: 'url',
-        options: {
-          limit: 4096,
-          name: `[path]${assetsFilenames}.[ext]`,
-        },
-      },
-      {
-        test: /\.(ttf|eot|woff2?|png|jpe?g|gif|svg|ico)$/,
-        include: /node_modules/,
-        loader: 'url',
-        options: {
-          limit: 4096,
-          outputPath: 'vendor/',
-          name: `${config.cacheBusting}.[ext]`,
-        },
-      },
+      }
     ],
   },
   resolve: {
