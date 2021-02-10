@@ -1,10 +1,10 @@
 /** Search form */
 .search-form {
-  @extend .form-inline;
+  @extend .row;
 }
 
 .search-form label {
-  @extend .form-group;
+  @extend .mb-3;
 
   font-weight: normal;
 }
