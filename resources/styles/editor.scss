@@ -1,11 +1,11 @@
 .block-editor-block-list__layout {
-  @apply font-sans;
+  // apply font
 }
 
 .wp-block {
-  @apply max-w-screen-md;
+  // breakpoint max-width
 
   &.editor-post-title__block .editor-post-title__input {
-    @apply font-sans #{!important};
+    // apply font !important
   }
 }
