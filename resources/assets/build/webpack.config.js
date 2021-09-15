@@ -90,7 +90,6 @@ let webpackConfig = {
               sourceMap: config.enabled.sourceMaps,
             },
           },
-          { loader: 'resolve-url-loader', options: { sourceMap: config.enabled.sourceMaps } },
           {
             loader: 'sass-loader', options: {
               sassOptions: {
@@ -100,25 +99,6 @@ let webpackConfig = {
             },
           },
         ],
-      },
-      {
-        test: /\.(ttf|otf|eot|woff2?|png|jpe?g|gif|svg|ico)$/,
-        include: config.paths.assets,
-        loader: 'url-loader',
-        options: {
-          limit: 4096,
-          name: `[path]${assetsFilenames}.[ext]`,
-        },
-      },
-      {
-        test: /\.(ttf|otf|eot|woff2?|png|jpe?g|gif|svg|ico)$/,
-        include: /node_modules/,
-        loader: 'url-loader',
-        options: {
-          limit: 4096,
-          outputPath: 'vendor/',
-          name: `[path]${assetsFilenames}.[ext]`,
-        },
       },
     ],
   },
