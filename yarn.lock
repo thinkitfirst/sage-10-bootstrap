@@ -1760,10 +1760,10 @@
   resolved "https://registry.yarnpkg.com/@webpack-cli/serve/-/serve-1.6.0.tgz#2c275aa05c895eccebbfc34cfb223c6e8bd591a2"
   integrity sha512-ZkVeqEmRpBV2GHvjjUZqEai2PpUbuq8Bqd//vEYsp63J8WyexI8ppCqVS3Zs0QADf6aWuPdU+0XsPI647PVlQA==
 
-"@wordpress/browserslist-config@4.1.0":
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/@wordpress/browserslist-config/-/browserslist-config-4.1.0.tgz#d6ae9d43709b2355eaccc4131fb47a0f2ae072c1"
-  integrity sha512-RSJhgY2xmz6yAdDNhz/NvAO6JS+91vv9cVL7VDG2CftbyjTXBef05vWt3FzZhfeF0xUrYdpZL1PVpxmJiKvbEg==
+"@wordpress/browserslist-config@4.1.2":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@wordpress/browserslist-config/-/browserslist-config-4.1.2.tgz#3d33e6316af269f2478bd6b0923aadd73cb08612"
+  integrity sha512-UH0Ifmm4tEjVPOtiqH6yxDvk2EKtqSAhnyhyfSIb0wUnEoGsWTjREZjzuhgjt/I2nTqfg+0gUSzL5D0yQH6wDQ==
 
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
