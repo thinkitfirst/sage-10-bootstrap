@@ -24,7 +24,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.5",
     "@roots/bud": "^5.0.0",
-    "@roots/sage": "^5.0.0",
+    "@roots/sage": "^5.8.7",
     "@wordpress/browserslist-config": "4.1.0",
     "autoprefixer": "^10.4.2",
     "eslint": "8.6.0",
