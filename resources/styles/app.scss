@@ -1,5 +1,4 @@
 // @import 'bootstrap/scss/bootstrap.scss';
-
 @import 'common/global';
 
 @import "common/fonts";
@@ -58,10 +57,10 @@
 // @import "~some-node-module";
 
 // Hamburgers animated menu icon
-@import "~hamburgers/_sass/hamburgers/hamburgers";
+@import "~hamburgers/dist/hamburgers.min.css";
 
 // Swiper styles idangero.us/
-@import "~swiper/swiper-bundle.css";
+// @import "~swiper/swiper-bundle.css";
 
 // Swiper styles idangero.us/
 @import "~fancybox/dist/css/jquery.fancybox.css";

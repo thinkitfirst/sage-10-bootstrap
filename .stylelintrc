@@ -1,6 +1,7 @@
 {
   "extends": "stylelint-config-standard",
   "rules": {
+    "function-no-unknown": null,
     "declaration-colon-newline-after": null,
     "value-list-comma-newline-after": null,
     "no-empty-source": null,
