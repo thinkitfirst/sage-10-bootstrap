@@ -1,0 +1,30 @@
+.tif-module-title-content-blocks {
+  .container {
+    .inner {
+      .content-panel {
+        .row.custom {
+          .content-section {
+            .content-icon {
+              max-width: 50px;
+              max-height: 50px;
+            }
+
+            h3 {
+              margin-left: 0;
+            }
+          }
+
+          @include media-breakpoint-up(sm) {
+            margin-left: -35px;
+            margin-right: -35px;
+
+            .content-section {
+              padding-left: 35px;
+              padding-right: 35px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.tif-module-feature-list-image {
+  .container {
+    .inner {
+      .content-panel {
+        .features-wrapper {
+          background-color: $bp-delta-color;
+
+          ul {
+            li {
+              position: relative;
+
+              &::before {
+                content: "\2713";
+                position: absolute;
+                left: -35px;
+                top: 5px;
+              }
+            }
+          }
+        }
+      }
+
+      .tif-bg-image {
+        min-height: 635px;
+      }
+    }
+  }
+}

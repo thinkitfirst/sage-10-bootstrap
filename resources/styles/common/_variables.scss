@@ -1,0 +1,54 @@
+$grid-columns: 24 !default;
+$grid-gutter-width: 15px !default;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px,
+  xl: 1440px,
+  xxl: 1600px
+);
+
+$container-max-widths: (
+  sm: 738px,
+  md: 962px,
+  lg: 1170px,
+  xl: 1410px,
+  xxl: 1570px
+);
+
+// WIREFRAME/BLUEPRINT COLORS
+$bp-alpha-color: #1c3665;
+$bp-bravo-color: #2699fb;
+$bp-charlie-color: #7fc4fd;
+$bp-delta-color: #bce0fd;
+$bp-echo-color: #f1f9ff;
+
+// COLORS
+// https://militaryalphabet.net/wp-content/uploads/2017/01/Military-Alphabet-Table-250x300.png
+// $alpha-color:
+// $bravo-color:
+// $charlie-color:
+
+$white: white;
+$black: black;
+$error: red;
+
+// $primary-font: "";
+
+// https://jonsuh.com/hamburgers/
+$hamburger-padding-x: 5px !default;
+$hamburger-padding-y: 5px !default;
+$hamburger-layer-width: 25px !default;
+$hamburger-layer-height: 3px !default;
+$hamburger-layer-spacing: 4px !default;
+$hamburger-layer-color: $black !default;
+$hamburger-layer-border-radius: 0 !default;
+$hamburger-hover-opacity: 1 !default;
+
+$hamburger-active-layer-color: $black !default;
+$hamburger-active-hover-opacity: $hamburger-hover-opacity !default;
+$hamburger-hover-use-filter: false !default;
+$hamburger-hover-filter: opacity(50%) !default;
+$hamburger-active-hover-filter: $hamburger-hover-filter !default;
+$hamburger-types: (slider, slider-r) !default;

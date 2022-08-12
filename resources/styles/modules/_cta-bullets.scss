@@ -1,0 +1,20 @@
+.tif-module-cta-bullets {
+  .content-panel {
+    .content-wrapper {
+      ul {
+        li {
+          margin-bottom: 40px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .bullet-icon {
+            max-height: 50px;
+            max-width: 50px;
+          }
+        }
+      }
+    }
+  }
+}
